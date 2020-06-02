@@ -11,8 +11,10 @@ font-style: #{$style};
 
 @import "fonts";
 @import "normalize";
+@import "variables";
 @import "grid";
 @import "settings";
 @import "interface";
-@import "header";
-@import "hero";
+@import "temp/header";
+@import "temp/hero";
+@import "temp/hero-features";

@@ -1,0 +1,30 @@
+.hfeat {
+	font-size: 342px;
+	font-weight: 200;
+	letter-spacing: -14px;
+	margin-bottom: 6rem;
+	display: flex;
+	justify-content: space-between;
+	&__main-accent {
+		font-size: 112px;
+		color: $accent-primary;
+		margin-left: 22px;
+	}
+	&__content {
+		margin-left: 18px;
+	}
+	&__title {
+		font-size: 24px;
+		line-height: 28.8px;
+		color: $dark;
+		letter-spacing: 0;
+		max-width: 28rem;
+		margin-bottom: 2.4rem;
+	}
+	&__text {
+		max-width: 21.2rem;
+		font-size: 1.6rem;
+		letter-spacing: 0;
+		line-height: 2.4rem;
+	}
+}

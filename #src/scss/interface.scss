@@ -1,0 +1,18 @@
+.button {
+	font-size: 1.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 4px;
+	&--outline {
+		background-color: transparent;
+	}
+	&--primary {
+		background-color: $primary;
+		color: #fff;
+		border: 1px solid $primary;
+	}
+	&--outline-primary {
+		color: $primary;
+		border: 1px solid $primary;
+	}
+}

@@ -1,6 +1,6 @@
 
 /* Функция определяющая поддержку webp браузером*/
-
+/*
 function testWebP(callback) {
 
 	var webP = new Image();
@@ -18,5 +18,4 @@ function testWebP(callback) {
 	document.querySelector('body').classList.add('no-webp');
 	}
 	});
-
-	alert('hello');
+	*/

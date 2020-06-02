@@ -1,0 +1,56 @@
+.hero {
+	background: url('../img/hero-bg1.png') no-repeat center bottom 0 / 100% auto;
+	padding: 16.3rem 0;
+	&__title {
+		font-size: 7.2rem;
+		font-weight: 300;
+		margin: 0;
+	}
+	&__subtitle {
+		display: block;
+		font-family: "MyriadPro", sans-serif;
+		font-size: 3.8rem;
+		font-weight: 400;
+		margin-bottom: 2rem;
+	}
+	&__desc {
+		display: block;
+		font-size: 1.6rem;
+		line-height: 2.397rem;
+		max-width: 35rem;
+		margin-bottom: 6.8rem;
+	}
+	&__wrap{
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 27.5rem;
+		.buttons {
+			margin-right: 5.3rem;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__button {
+		padding: 14px 35px;
+		&:first-child {
+			margin-bottom: 12px;
+		}
+	}
+	&__question {
+		display: inline-block;
+		font-size: 1.2rem;
+		font-family: "MyriadPro", sans-serif;
+		font-size: 4rem;
+		background-color: #fff;
+		padding: 1.4rem 1.9rem 1.4rem 1.4rem;
+	}
+	&__lead {
+		font-size: 2.4rem;
+		line-height: 2.876rem;
+		max-width: 33rem;
+		margin-top: 1.6rem;
+		&-accent {
+			color: $accent-primary;
+		}
+	}
+}

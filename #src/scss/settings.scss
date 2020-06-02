@@ -1,0 +1,50 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+button, button:focus, button:hover, button:active {
+	border: none;
+	outline: none;
+}
+a, a:active, a:visited {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+html {
+	font-size: 10px;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	color: $dark;
+	font-weight: 300;
+}
+.section {
+	&__title {
+		font-size: 3.6rem;
+	}
+	&__subtitle {
+		font-size: 16px;
+		font-weight: 300;
+	}
+}
+@media screen and ( max-width: 1600px ) {
+	.hero {
+		background: url('../img/hero-bg.png') no-repeat center top 50% / cover;
+	}
+}
+@media screen and ( max-width: 1030px ) {
+	html {
+		font-size: 8px;
+	}
+}
+@media screen and ( max-width: 780px ) {
+	.hero {
+		background: linear-gradient(61.6deg, #E2ECF5 15.28%, #F7FAFC 62.6%);
+		&__wrap {
+			margin-bottom: 18rem;
+		}
+	}
+}
