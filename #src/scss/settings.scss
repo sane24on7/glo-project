@@ -35,10 +35,12 @@ body {
 		background: url('../img/hero-bg.png') no-repeat center top 50% / cover;
 	}
 }
-@media screen and ( max-width: 1030px ) {
+@media screen and ( max-width: 1200px ) {
 	html {
 		font-size: 8px;
 	}
+}
+@media screen and ( max-width: 1030px ) {
 }
 @media screen and ( max-width: 780px ) {
 	.hero {

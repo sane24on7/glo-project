@@ -1,6 +1,6 @@
 .hero {
-	background: url('../img/hero-bg1.png') no-repeat center bottom 0 / 100% auto;
-	padding: 16.3rem 0;
+	background: url('../img/hero-bg.png') no-repeat center bottom 0 / 100% auto;
+	padding: 16.3rem 0 27rem;
 	&__title {
 		font-size: 7.2rem;
 		font-weight: 300;
@@ -25,13 +25,13 @@
 		align-items: flex-start;
 		margin-bottom: 27.5rem;
 		.buttons {
-			margin-right: 5.3rem;
+			margin-right: 5.2rem;
 			display: flex;
 			flex-direction: column;
 		}
 	}
 	&__button {
-		padding: 14px 35px;
+		padding: 14px 34px;
 		&:first-child {
 			margin-bottom: 12px;
 		}
