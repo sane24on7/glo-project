@@ -1,4 +1,9 @@
 .header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99;
 	background-color: #fff;
 }
 .menu {
@@ -41,7 +46,7 @@
 			text-decoration: none;
 			letter-spacing: 1.12px;
 			color: $secondary;
-			&--main {
+			&--active {
 				color: #000;
 				&::after {
 					position: absolute;

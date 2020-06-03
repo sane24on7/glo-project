@@ -1,13 +1,18 @@
 .hfeat {
 	margin-top: -26.5rem;
-	&__images {
-		display: flex;
-		align-items: flex-end;
+	border-bottom: 1px solid $light-blue;
+	padding-bottom: 11.6rem;
+	display: flex;
+	align-items: flex-end;
+
+	&__feature--main {
+		padding-bottom: 2.4rem;
+		margin-right: 16.5rem;
 	}
 
 	&__main-img {
 		font-size: 34.2rem;
-		margin: 0 16.75rem -0.7rem -2rem;
+		margin-left: -2rem;
 		font-weight: 200;
 		letter-spacing: -14px;
 	}
@@ -18,59 +23,37 @@
 		margin-left: 2.2rem;
 	}
 
+	&__feature {
+		margin-right: 1rem;
+		&:last-child {
+			padding-bottom: 2.3rem;
+			margin-right: -10px;
+		}
+	}
+
 	&__img-wrap {
-		margin: 0 0 7rem 0;
-		&:last-child{
-			margin-left: 19.5rem;
-		}
+		margin-bottom: 7rem;
 	}
 
-	&__img {
-	}
-
-	&__content {
-		display: flex;
-	}
-
-	&__features {
-		&:first-child {
-			margin-right: 3rem;
-		}
-	}
-	
 	&__title {
 		font-size: 2.4rem;
-		font-weight: 300;
 		line-height: 28.8px;
+		font-weight: 300;
 		max-width: 28rem;
 		margin-bottom: 2.4rem;
 	}
-	
+
 	&__text {
-		max-width: 27rem;
 		font-size: 1.6rem;
 		line-height: 2.4rem;
-	}
-
-	&__title--bold {
-		font-weight: 700;
-	}
-	
-	&__features--main {
-		margin-right: 31rem;
-	}
-
-	&__features-wrap {
-		display: flex;
-	}
-
-	&__title--main {
-		font-weight: 700;
-		max-width: 29rem;
+		max-width: 26.2rem;
 	}
 
 	&__text--main {
 		max-width: 21.2rem;
 	}
-
+	
+	&__title--main {
+		font-weight: 700;
+	}
 }

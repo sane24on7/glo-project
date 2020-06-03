@@ -1,0 +1,78 @@
+.calc {
+	padding: 11.1rem 0 10rem 0;
+}
+.calc__heading {
+	margin-bottom: 6.4rem;
+}
+.calc__title {
+	margin: auto;
+	max-width: 50rem;
+	text-align: center;
+	margin-bottom: 2.4rem;
+}
+.calc__subtitle {
+	max-width: 36rem;
+	text-align: center;
+	margin: auto;
+	line-height: 150%;
+}
+.calc__wrapper {
+	display: flex;
+	margin-bottom: 7.4rem;
+}
+.calc__slogan {
+	margin: -.7rem 13.5rem 0 0.9rem;
+	align-self: flex-start;
+}
+.calc__caption {
+	font-size: 2.4rem;
+	font-weight: 300;
+	max-width: 26rem;
+	margin-bottom: 3rem;
+	line-height: 2.88rem;
+}
+.calc__desc {
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 2.4rem;
+	max-width: 18rem;
+}
+.calc__row {
+	display: flex;
+	padding-top: 3.4rem;
+	&:first-child {
+		border-bottom: 1px solid $light-blue;
+		padding-bottom: 3.5rem;
+		padding-top: 0;
+	}
+}
+.calc__col {
+	display: flex;
+	align-items: center;
+	margin-right: 5.5rem;
+	&:last-child {
+		padding: 0;
+		margin: 0;
+	}
+}
+.calc__input {
+	border-radius: 4px;
+	padding: 18px;
+	width: 98px;
+	height: 48px;
+	border: 1px solid $accent-secondary;
+	margin-right: 3.3rem;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+.calc__label {
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 2.4rem;
+	max-width: 20rem;
+}
+.calc__button {
+	margin: auto;
+	display: block;
+	padding: 15px 26px;
+}

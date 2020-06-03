@@ -3,9 +3,10 @@
 	margin: 0;
 	padding: 0;
 }
-button, button:focus, button:hover, button:active {
+button {
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 a, a:active, a:visited {
 	text-decoration: none;
@@ -24,6 +25,7 @@ body {
 .section {
 	&__title {
 		font-size: 3.6rem;
+		font-weight: 300;
 	}
 	&__subtitle {
 		font-size: 16px;
@@ -31,22 +33,233 @@ body {
 	}
 }
 @media screen and ( max-width: 1600px ) {
+	.title--bold {
+		font-weight: 700;
+	}
 	.hero {
-		background: url('../img/hero-bg.png') no-repeat center top 50% / cover;
+		background: url('../img/hero-bg1600.png') no-repeat center top -15px / cover;
 	}
 }
-@media screen and ( max-width: 1200px ) {
+@media screen and ( max-width: 1260px ) {
 	html {
 		font-size: 8px;
 	}
+	.hero__desc {
+		font-size: 16px;
+		max-width: 44rem;
+	}
+	.hfeat {
+		margin: auto;
+		margin-top: -26rem;
+		border: none;
+	}
+	.calc__input {
+		width: 76px;
+		height: 42px;	
+	}
 }
-@media screen and ( max-width: 1030px ) {
+@media screen and ( max-width: 991px ) {
+	.hfeat {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.hfeat__feature--main {
+		margin-right: 0;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+	.hfeat__title--main {
+		max-width: none;
+	}
+	.hfeat__text--main {
+		max-width: none;
+	}
+	.hfeat__feature {
+		margin: 0 8% 0 auto;
+		&:last-child {
+			margin: 0 auto 0 0;
+		}
+	}
+	.calc__wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.calc__slogan {
+		align-self: center;
+		margin: 0;
+		margin-bottom: 4rem;
+	}
+	.calc__row {
+		flex-direction: column;
+	}
+	.calc__col {
+		margin: 0;
+		margin-bottom: 2rem;
+	}
+	.calc__caption {
+		text-align: center;
+		max-width: 300px;
+	}
+	.calc__desc {
+		margin: 0;
+		text-align: center;
+		max-width: 300px;
+	}
 }
 @media screen and ( max-width: 780px ) {
+	.nav {
+		display: none;
+	}
 	.hero {
-		background: linear-gradient(61.6deg, #E2ECF5 15.28%, #F7FAFC 62.6%);
+		background: linear-gradient(180deg, #E1EBF5 78.18%, #FFFFFF 100%);
+		padding-bottom: 40px;
 		&__wrap {
-			margin-bottom: 18rem;
+			margin-bottom: 10rem;
+		}
+	}
+	.hfeat {
+		margin-top: 0;
+	}
+}
+@media screen and ( max-width: 600px ) {
+	.hero__wrap{
+		flex-wrap: wrap;
+		.buttons {
+			width: 100%;
+			order: 2;
+			margin-right: 0;
+		}
+	}
+	.hero {
+		padding-top: 20rem;
+	}
+	.hero__title {
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+	.hero__subtitle {
+		font-size: 26px;
+		margin-bottom: 30px;
+	}
+	.hero__desc {
+		font-size: 18px;
+		max-width: none;
+		line-height: 160%;
+	}
+	.hero__lead {
+		order: 1;
+		margin-bottom: 20px;
+		max-width: 300px;
+	}
+	.hfeat {
+		padding-bottom: 6rem;
+		&__main-img {
+			font-size: 60px;
+			letter-spacing: 0;
+			margin-left: 0;
+		}
+		&__main--accent {
+			font-size: 36px;
+			margin-left: 8px;
+		}
+		&__img-wrap {
+			text-align: center;
+		}
+		&__title {
+			text-align: center;
+			line-height: 160%;
+			font-size: 16px;
+			margin: 0 0 15px 0;
+		}
+		&__text {
+			text-align: center;
+			max-width: 240px;
+			margin: 0 auto 0 auto;
+		}
+		&__feature--main {
+			margin: 0 auto 70px auto;
+		}
+		&__feature {
+			margin: 0 auto 70px auto;
+			&:last-child {
+				margin: 0 auto 40px auto;
+			}
+		}
+	}
+}
+@media screen and ( max-width: 510px ) {
+	.menu__logo {
+		font-size: 14px;
+	}
+	.menu__phone {
+		font-size: 14px;
+	}
+	.hero {
+		padding-top: 130px;
+	}
+	.hero__wrap {
+		margin-bottom: 50px;
+	}
+	.hero__title {
+		font-size: 36px;
+	}
+	.hero__subtitle {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.hero__desc {
+		display: none;
+	}
+	.hero__lead {
+		font-size: 14px;
+	}
+	.hero__question {
+		display: block;
+		text-align: center;
+		max-width: 300px;
+		margin: auto;
+	}
+	.hfeat__img-wrap {
+		margin: auto;
+		max-width: 80px;
+		margin-bottom: 10px;
+		&--last {
+			max-width: 60px;
+		}
+		.hfeat__img {
+			object-fit: contain;
+		}
+	}
+	.calc {
+		padding-top: 0;
+	}
+	.calc__title {
+		font-size: 3rem;
+	}
+	.calc__button {
+		font-size: 12px;
+	}
+}
+@media screen and ( min-width: 991px ) {
+	.button--primary:hover {
+		box-shadow: none;
+		transition: box-shadow 0.3s;
+	}
+	.menu__logo:hover {
+		color: $primary;
+		transition: color 0.3s;
+	}
+	.nav__item:hover {
+		color: $dark;
+		transition: color 0.3s;
+	}
+	.menu__phone:hover {
+		color: $primary;
+		transition: color 0.3s;
+		.menu__phone--black {
+			color: $primary;
+			transition: color 0.3s;	
 		}
 	}
 }

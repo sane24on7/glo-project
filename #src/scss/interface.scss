@@ -1,5 +1,4 @@
 .button {
-	font-size: 1.7rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	border-radius: 4px;
@@ -7,12 +6,15 @@
 		background-color: transparent;
 	}
 	&--primary {
+		font-size: 1.7rem;
 		background-color: $primary;
 		color: #fff;
 		border: 1px solid $primary;
+		box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32);
 	}
 	&--outline-primary {
 		color: $primary;
 		border: 1px solid $primary;
+		font-size: 1.6rem;
 	}
 }

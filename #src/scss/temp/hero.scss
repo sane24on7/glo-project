@@ -1,10 +1,13 @@
 .hero {
-	background: url('../img/hero-bg.png') no-repeat center bottom 0 / 100% auto;
-	padding: 16.3rem 0 27rem;
+	background: url('../img/hero-bg.png') no-repeat center bottom 0 / cover;
+	padding: 25rem 0 27rem;
+	// clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	&__title {
 		font-size: 7.2rem;
 		font-weight: 300;
 		margin: 0;
+		margin-left: -5px;
+		margin-bottom: -3px;
 	}
 	&__subtitle {
 		display: block;
@@ -18,7 +21,7 @@
 		font-size: 1.6rem;
 		line-height: 2.397rem;
 		max-width: 35rem;
-		margin-bottom: 6.8rem;
+		margin-bottom: 6.7rem;
 	}
 	&__wrap{
 		display: flex;
@@ -31,7 +34,7 @@
 		}
 	}
 	&__button {
-		padding: 14px 34px;
+		padding: 14px 38px;
 		&:first-child {
 			margin-bottom: 12px;
 		}
@@ -47,8 +50,8 @@
 	&__lead {
 		font-size: 2.4rem;
 		line-height: 2.876rem;
-		max-width: 33rem;
-		margin-top: 1.6rem;
+		max-width: 34rem;
+		margin-top: 1.5rem;
 		&-accent {
 			color: $accent-primary;
 		}
