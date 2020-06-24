@@ -22,7 +22,21 @@
 		</div>
 	</div>
 </header>
-	<div class="hero">
+	<div class="hamburger-menu">
+	<input id="menu__toggle" type="checkbox" />
+	<label class="menu__btn" for="menu__toggle">
+		<span></span>
+	</label>
+	<ul class="menu__box">
+		<li><a class="menu__item" href="#">Обучение торговле</a></li>
+		<li><a class="menu__item" href="#">Аналитика</a></li>
+		<li><a class="menu__item" href="#">О проекте</a></li>
+	</ul>
+</div>
+<!-- /.hamburger-menu -->
+
+	<main class="main">
+		<div class="hero">
 	<div class="container">
 		<h1 class="hero__title">Курс алготрейдинга</h1>
 		<strong class="hero__subtitle">обучение алгоритмической торговле</strong>
@@ -40,7 +54,7 @@
 	<!-- /.container -->
 </div>
 <!-- /.hero -->
-	<section class="hero-features">
+		<section class="hero-features">
 	<div class="container">
 		<div class="hfeat">
 
@@ -89,7 +103,7 @@
 	<!-- /.container -->
 </section>
 <!-- /.hero-feat -->
-	<section class="section calc">
+		<section class="section calc">
 	<div class="container">
 		<div class="section__heading calc__heading">
 			<h2 class="section__title calc__title">Создайте своего авторского&nbsp;торгового робота</h2>
@@ -110,13 +124,13 @@
 			<div class="calc__wrap">
 				<div class="calc__row">
 					<div class="calc__col">
-						<input type="text" class="calc__input">
+						<input type="text" class="input calc__input">
 						<label for="" class="calc__label">Количество инструментов, по которым Вы торгуете</label>
 						<!-- /.calc__label -->
 					</div>
 					<!-- /.calc__col -->
 					<div class="calc__col">
-						<input type="text" class="calc__input">
+						<input type="text" class="input calc__input">
 						<label for="" class="calc__label">Средняя месячная прибыль (%)</label>
 						<!-- /.calc__label -->
 					</div>
@@ -125,13 +139,13 @@
 				<!-- /.calc__row -->
 				<div class="calc__row">
 					<div class="calc__col">
-						<input type="text" class="calc__input">
+						<input type="text" class="input calc__input">
 						<label for="" class="calc__label">Количество инструментов Вашего брокера</label>
 						<!-- /.calc__label -->
 					</div>
 					<!-- /.calc__col -->
 					<div class="calc__col">
-						<input type="text" class="calc__input">
+						<input type="text" class="input calc__input">
 						<label for="" class="calc__label">Сумма депозита ($)</label>
 						<!-- /.calc__label -->
 					</div>
@@ -148,6 +162,125 @@
 	<!-- /.container -->
 </section>
 <!-- /.section calculator -->
+		<section class="section darkblue">
+	<div class="container">
+		<h3 class="darkblue__text">Обучитесь алгоритмической торговле и&nbsp;уже <span class="darkblue__text--accent-primary">через 30 дней</span> создайте своего&nbsp;эффективного торгового робота!</h3>
+			<button class="button darkblue__button button--outline button--outline-light">Начать обучение</button>
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.darkblue -->
+		
+		<section class="simple">
+	<div class="container">
+		<div class="section__heading simple__heading">
+			<h2 class="section__title simple__title"><span class="simple__title-word title--bold">Всё</span> очень просто</h2>
+			<!-- /.section__title -->
+			<p class="section__subtitle simple__subtitle">Никаких лишних движений во время обучения. Мы с Вами будем чётко следовать по разработанной нами карте обучения.</p>
+			<!-- /.section__subtitle -->
+		</div>
+		<!-- /.section__heading simple__heading -->
+		<ul class="map-list">
+			<li class="map-item">Создание робота</li>
+			<!-- /.map-item -->
+			<li class="map-item">Внедрение</li>
+			<!-- /.map-item -->
+			<li class="map-item">Оптимизация</li>
+			<!-- /.map-item -->
+			<li class="map-item">Запуск</li>
+			<!-- /.map-item -->
+			<li class="map-item">Прибыль</li>
+			<!-- /.map-item -->
+		</ul>
+		<!-- /.map-list -->
+		<div class="simple__video video" id="player">
+			<img src="./img/simple-play.png" alt="Play icon" class="video__play">
+		</div>
+		<!-- /.control__video video -->
+		<div class="content simple__content">
+			<h3 class="simple__content-title content__title">Реальный пример работы алгоритма</h3>
+			<p class="simple__content-description content__description">Меня с детства интересовал анализ процессов, которые происходят в мире финансов. Именно этот интерес меня подтолкнул получить высшее образование в сфере экономико-математического моделирования по специальности экономическая кибернетика в одной из лучших школ рискологии в СНГ. В процессе обучения, я активно принимал участие в различных международных конференциях и олимпиадах. В 2011 году стал победителем олимпиады по инвестиционному анализу, а в 2012 обладателем гранта от фонда Виктора Пинчука. Сейчас работаю над диссертацией «Моделирование нелинейной динамики финансовых систем».</p>
+		</div>
+		<button class="button button--primary simple__content-button">Приступить к созданию своего доходного робота</button>
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.simple -->
+		
+		<section class="vertical-form">
+	<div class="container">
+		<h3 class="vertical-form__title">Получите первые видеоуроки	совершенно бесплатно уже сейчас!</h3>
+		<p class="vertical-form__subtitle">Просто внесите Ваши данные в форму прям сейчас, и&nbsp;мы&nbsp;сразу Вам вышлем подборку первых видеоуроков. Убедитесь сами!</p>
+		<form action="GET" class="vertical-form__form form">
+			<input type="text" class="input vertical-form__input" placeholder="Имя">
+			<input type="tel" class="input vertical-form__input" placeholder="Телефон">
+			<input type="email" class="input vertical-form__input" placeholder="Email">
+			<button class="button button--primary vertical-form__button">Начать обучение</button>
+		</form>
+		<!-- /.vertical-form form -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.vertical-form -->
+		<section class="horizontal-form">
+	<div class="container">
+		<h3 class="horizontal-form__title">Остались вопросы?</h3>
+		<p class="horizontal-form__subtitle">Оставьте свои контактные данные и мы с Вами свяжемся в самое ближайшее время</p>
+		<form action="GET" class="horizontal-form__form form">
+			<input type="text" class="input horizontal-form__input" placeholder="Имя">
+			<input type="tel" class="input horizontal-form__input" placeholder="Телефон">
+			<input type="email" class="input horizontal-form__input" placeholder="Email">
+			<button class="button button--primary horizontal-form__button">Свяжитесь со мной</button>
+		</form>
+		<!-- /.horizontal-form form -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.horizontal-form -->
+	</main>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__row">
+			<div class="footer__col footer__heading">
+				<h3 class="footer__title">Алготрейдинг</h3>
+				<p class="footer__subtitle">Обучение алгоритмической торговле</p>
+			</div>
+			<!-- /.footer_col -->
+			<div class="footer__col footer__links">
+				<a href="#" class="footer__link">Аналитика</a>
+				<a href="#" class="footer__link">О проекте</a>
+				<a href="#" class="footer__link">Контакты</a>
+			</div>
+			<!-- /.footer_col -->
+			<div class="footer__col footer__links footer__links--last">
+				<a href="" class="footer__link">Вопросы и ответы</a>
+				<a href="" class="footer__link">Записаться на курс</a>
+			</div>
+			<!-- /.footer_col -->
+			<div class="footer__col footer__social-links">
+				<input type="text" class="footer__input input" placeholder="E-mail рассылка">
+				<div class="footer__socials">
+					<a href="#" class="footer__social-link footer__social-link--fb"></a>
+					<!-- /.footer__social-link -->
+					<a href="#" class="footer__social-link footer__social-link--vk"></a>
+					<!-- /.footer__social-link -->
+					<a href="#" class="footer__social-link footer__social-link--yt"></a>
+					<!-- /.footer__social-link -->
+					<a href="#" class="footer__social-link footer__social-link--inst"></a>
+					<!-- /.footer__social-link -->
+					<button class="footer__social-link footer__social-link--confirm"></button>
+					<!-- /.footer__social-link -->
+				</div>
+				<!-- /.footer__socials -->
+				<p class="footer__link">Design by Glo Academy</p>
+			</div>
+			<!-- /.footer_col -->
+		</div>
+		<!-- /.footer__row -->
+	</div>
+	<!-- /.container -->
+</footer>
+<!-- /.footer -->
 	<script src="js/script.min.js"></script>
 </body>
 

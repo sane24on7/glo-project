@@ -1,0 +1,24 @@
+.darkblue {
+	padding: 12.4rem 0 0 0;
+	min-height: 41rem;
+	background: url('../img/darkblue-bg.png') no-repeat top right, radial-gradient(circle 677px at center, #03256c 0%, #061826 100%);
+}
+.darkblue__text {
+	color: #ffffff;
+	font-size: 2.4rem;
+	font-weight: 700;
+	max-width: 46rem;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 3.6rem;
+	line-height: 118%;
+	&--accent-primary {
+		color: $accent-primary;
+	}
+}
+.darkblue__button {
+	display: block;
+	margin: auto;
+	font-size: 1.7rem;
+	padding: 12px 36px 15px 30px;
+}

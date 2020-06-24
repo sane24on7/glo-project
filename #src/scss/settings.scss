@@ -22,6 +22,7 @@ body {
 	color: $dark;
 	font-weight: 300;
 }
+
 .section {
 	&__title {
 		font-size: 3.6rem;
@@ -32,6 +33,15 @@ body {
 		font-weight: 300;
 	}
 }
+.input {
+	border-radius: 4px;
+}
+@media screen and ( min-width: 320px ) {
+	.title--bold {
+		font-weight: 700;
+	}
+}
+
 @media screen and ( max-width: 1600px ) {
 	.title--bold {
 		font-weight: 700;
@@ -57,8 +67,31 @@ body {
 		width: 76px;
 		height: 42px;	
 	}
+	.calc__wrapper {
+		justify-content: center;
+	}
+	.footer__heading {
+		margin-right: 0;
+	}
+	.footer__social-link {
+		width: 32px;
+		height: 32px;
+	}
+	.footer__row {
+		justify-content: space-between;
+	}
+	.footer__links {
+		margin-right: 0;
+		margin-left: 0;		
+	}
+	.calc {
+		background: url('../img/calc-bg-l.png') no-repeat bottom left;
+	}
 }
 @media screen and ( max-width: 991px ) {
+	.menu {
+		display: none;
+	}
 	.hfeat {
 		flex-wrap: wrap;
 		align-items: center;
@@ -106,11 +139,12 @@ body {
 		text-align: center;
 		max-width: 300px;
 	}
+	.footer__links::before{
+		width: 100px;
+	}
+
 }
 @media screen and ( max-width: 780px ) {
-	.nav {
-		display: none;
-	}
 	.hero {
 		background: linear-gradient(180deg, #E1EBF5 78.18%, #FFFFFF 100%);
 		padding-bottom: 40px;
@@ -120,6 +154,21 @@ body {
 	}
 	.hfeat {
 		margin-top: 0;
+	}
+	.footer {
+		padding-bottom: 60px;
+	}
+	.footer__heading {
+		display: none;
+	}
+	.footer__links {
+		margin-top: 0;
+	}
+	.footer__row {
+		align-items: flex-start;
+	}
+	.footer__input {
+		margin-top: -50px;
 	}
 }
 @media screen and ( max-width: 600px ) {
@@ -153,7 +202,8 @@ body {
 		max-width: 300px;
 	}
 	.hfeat {
-		padding-bottom: 6rem;
+		padding-bottom:8rem;
+		justify-content: flex-end;
 		&__main-img {
 			font-size: 60px;
 			letter-spacing: 0;
@@ -181,20 +231,43 @@ body {
 			margin: 0 auto 70px auto;
 		}
 		&__feature {
-			margin: 0 auto 70px auto;
+			margin: 0 auto 0 auto;
 			&:last-child {
-				margin: 0 auto 40px auto;
+				margin: 0 auto 0 auto;
 			}
 		}
 	}
+	.calc {
+		padding-top: 3rem;
+	}
+	.footer {
+		padding-top: 60px;
+	}
+	.footer__input {
+		display: none;
+	}
+	.footer__social-link {
+		margin: 10px;
+	}
+	.footer__social-link--confirm {
+		display: none;
+	}
+	.footer__row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__input {
+		margin-top: 0;
+	}
+	.footer__link {
+		margin-bottom: 20px;
+	}
+	.footer__links::before{
+		display: none;
+	}
+
 }
 @media screen and ( max-width: 510px ) {
-	.menu__logo {
-		font-size: 14px;
-	}
-	.menu__phone {
-		font-size: 14px;
-	}
 	.hero {
 		padding-top: 130px;
 	}
@@ -246,6 +319,19 @@ body {
 		box-shadow: none;
 		transition: box-shadow 0.3s;
 	}
+	.button--outline-primary:hover {
+		background-color: $primary;
+		color: #fff;
+		transition: color 0.3s;
+		transition: background-color 0.3s;
+	}
+	.button--outline-light:hover {
+		background-color: #fff;
+		color: $primary;
+		transition: color 0.3s;
+		transition: background-color 0.3s;
+	}
+
 	.menu__logo:hover {
 		color: $primary;
 		transition: color 0.3s;
@@ -253,6 +339,15 @@ body {
 	.nav__item:hover {
 		color: $dark;
 		transition: color 0.3s;
+		&:after {
+			position: absolute;
+			content: '';
+			bottom: -3.4rem;
+			left: 0;
+			background-color: $primary;
+			width: 100%;
+			height: 3px;
+		}
 	}
 	.menu__phone:hover {
 		color: $primary;
@@ -261,5 +356,13 @@ body {
 			color: $primary;
 			transition: color 0.3s;	
 		}
+	}
+	.footer__link:hover {
+		color: $primary;
+		transition: color 0.3s;
+	}
+	.footer__social-link:hover {
+		box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32);
+		transition: box-shadow 0.3s;
 	}
 }

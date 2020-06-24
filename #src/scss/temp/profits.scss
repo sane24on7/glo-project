@@ -1,0 +1,33 @@
+.profits {
+	padding: 12.3rem 0 13rem 0;
+	background: url('../img/profits-phone.png') no-repeat bottom center, $light-blue;
+
+}
+.profits__title {
+	max-width: 46.2rem;
+	margin: auto;
+	margin-bottom: 29.6rem;
+}
+.swiper-container {
+	width: 315px;
+	height: 560px;
+}
+.profits__img-wrap {
+	margin-bottom: 5.2rem;
+}
+.profits__slide-title {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+.profits__slide-text {
+	font-size: 1.6rem;
+	font-weight: 400;
+	font-family: "MyriadPro";
+	max-width: 15.7rem;
+}
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}

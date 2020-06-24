@@ -13,9 +13,18 @@ font-style: #{$style};
 @import "normalize";
 @import "variables";
 @import "grid";
+@import "swiper.min";
 @import "settings";
 @import "interface";
 @import "temp/header";
 @import "temp/hero";
 @import "temp/hero-features";
 @import "temp/calculator";
+@import "temp/darkblue";
+@import "temp/profits";
+@import "temp/simple";
+
+@import "temp/vertical-form";
+@import "temp/horizontal-form";
+@import "temp/footer";
+@import "temp/hamb-menu";
