@@ -1193,6 +1193,8 @@ body {
   border-radius: 4px;
 }
 
+/* Ховеры*/
+
 .button {
   font-weight: 700;
   text-transform: uppercase;
@@ -1324,7 +1326,7 @@ body {
 }
 
 .hero {
-  background: url("../img/hero-bg.png") no-repeat center bottom 0/cover;
+  background: url("../img/hero-bg.png") no-repeat center bottom -11px/cover;
   padding: 24.5rem 0 27rem;
 }
 
@@ -1597,48 +1599,104 @@ body {
 }
 
 .profits {
-  padding: 12.3rem 0 13rem 0;
-  background: url("../img/profits-phone.png") no-repeat bottom center, #eaf1f7;
+  padding: 11.5rem 0 13rem 0;
+  background: url("../img/profits-phone.png") no-repeat bottom center, url("../img/profits-bg-lines.png") no-repeat bottom center, #eaf1f7;
 }
 
 .profits__title {
-  max-width: 46.2rem;
-  margin: auto;
+  max-width: 46.457rem;
+  line-height: 116.5%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profits__heading {
   margin-bottom: 29.6rem;
 }
 
-.swiper-container {
-  width: 315px;
-  height: 560px;
-}
-
 .profits__img-wrap {
-  margin-bottom: 5.2rem;
+  text-align: center;
+  margin: 0 0 4.5rem;
 }
 
 .profits__slide-title {
   font-size: 2.4rem;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.6rem;
 }
 
 .profits__slide-text {
   font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "MyriadPro";
-  max-width: 15.7rem;
+  line-height: 2.4rem;
+  font-weight: 300;
+  max-width: 17rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.swiper-slide {
+.profits-slider {
+  overflow: hidden;
+  width: 721px;
+  height: 288px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.profits-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.profits-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+}
+
+.prev-slide {
+  position: absolute;
+  left: 0;
+  top: 60.5%;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.next-slide {
+  position: absolute;
+  right: 0;
+  top: 60.5%;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.profits-button-prev,
+.profits-button-next {
+  position: absolute;
+  top: 57%;
+  margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+  z-index: 10;
+  cursor: pointer;
+  width: 52px;
+  height: 16px;
+}
+
+.profits-button-prev {
+  left: 0;
+  background: url("../img/profits-arrow-l.png") no-repeat left center;
+}
+
+.profits-button-next {
+  right: 0;
+  background: url("../img/profits-arrow-r.png") no-repeat right center;
+}
+
+.profits-button-prev::after,
+.profits-button-next::after {
+  display: none;
 }
 
 .simple {
@@ -1646,7 +1704,7 @@ body {
 }
 
 .vertical-form {
-  padding: 128px 0 122px;
+  padding: 12.2rem 0 12.2rem;
   background: url("../img/vertical-form-bg.png") no-repeat center/cover, -o-radial-gradient(center, circle 1152px, #03256c 0%, #061826 100%);
   background: url("../img/vertical-form-bg.png") no-repeat center/cover, radial-gradient(circle 1152px at center, #03256c 0%, #061826 100%);
 }
@@ -1655,20 +1713,25 @@ body {
   text-align: center;
   margin: auto;
   font-size: 2.4rem;
-  line-height: 2.88rem;
+  line-height: 2.9rem;
   color: #fff;
   max-width: 41rem;
-  margin-bottom: 2.6rem;
+  margin-bottom: 2rem;
 }
 
 .vertical-form__subtitle {
   text-align: center;
+  padding: 0 21px 0 0;
   color: #fff;
   margin: auto;
-  font-size: 1.5rem;
-  line-height: 2.4rem;
-  max-width: 41.6rem;
-  margin-bottom: 4.5rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 24px;
+  max-width: 44rem;
+}
+
+.vertical-form__subtitle--2 {
+  margin-bottom: 3.8rem;
 }
 
 .vertical-form__form {
@@ -1679,20 +1742,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 35.9rem;
+  max-width: 36.2rem;
   margin: auto;
 }
 
 .vertical-form__input {
-  padding: 1.7rem;
+  padding: 1.3rem 1.5rem 1.3rem;
   font-size: 1.9rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.1rem;
 }
 
 .vertical-form__button {
   font-size: 17px;
   font-weight: 700;
-  padding: 1.8rem;
+  padding: 1.5rem;
 }
 
 .horizontal-form {
@@ -2071,12 +2134,8 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
-  .title--bold {
-    font-weight: 700;
-  }
-
   .hero {
-    background: url("../img/hero-bg1600.png") no-repeat center top -15px/cover;
+    background: url("../img/hero-bg1600.png") no-repeat center top -11px/cover;
   }
 }
 
@@ -2107,6 +2166,18 @@ body {
             justify-content: center;
   }
 
+  .calc {
+    background: url("../img/calc-bg-l.png") no-repeat bottom left;
+  }
+
+  .profits {
+    background: url("../img/profits-phone.png") no-repeat bottom -70px center, url("../img/profits-bg-lines.png") no-repeat bottom center, #eaf1f7;
+  }
+
+  .profits__title {
+    max-width: 380px;
+  }
+
   .footer__heading {
     margin-right: 0;
   }
@@ -2125,10 +2196,6 @@ body {
   .footer__links {
     margin-right: 0;
     margin-left: 0;
-  }
-
-  .calc {
-    background: url("../img/calc-bg-l.png") no-repeat bottom left;
   }
 }
 
@@ -2208,8 +2275,14 @@ body {
     max-width: 300px;
   }
 
-  .footer__links::before {
-    width: 100px;
+  .profits {
+    padding-bottom: 6rem;
+    background: url("../img/profits-phone.png") no-repeat bottom -130px center, url("../img/profits-bg-lines.png") no-repeat bottom center, #eaf1f7;
+  }
+
+  .profits-slider {
+    width: 91%;
+    height: 290px;
   }
 
   .horizontal-form__form {
@@ -2235,9 +2308,21 @@ body {
   .horizontal-form__button {
     max-width: 100%;
   }
+
+  .footer__links::before {
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 780px) {
+  .section__title {
+    font-size: 24px;
+  }
+
+  .section__subtitle {
+    font-size: 16px;
+  }
+
   .hero {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(78.18%, #E1EBF5), to(#FFFFFF));
     background: -o-linear-gradient(top, #E1EBF5 78.18%, #FFFFFF 100%);
@@ -2251,6 +2336,39 @@ body {
 
   .hfeat {
     margin-top: 0;
+  }
+
+  .profits {
+    padding: 6rem 0 4rem;
+    background: url("../img/profits-phone.png") no-repeat bottom -80px center/500px, url("../img/profits-bg-lines.png") no-repeat bottom center, #eaf1f7;
+  }
+
+  .profits-slider {
+    width: 480px;
+    height: 190px;
+  }
+
+  .profits__img-wrap {
+    width: 80px;
+    margin: 0 auto 10px;
+  }
+
+  .profits__heading {
+    margin-bottom: 14rem;
+  }
+
+  .profits__slide-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .profits__slide-text {
+    font-size: 14px;
+  }
+
+  .profits-button-prev,
+  .profits-button-next {
+    background-size: 40px auto;
   }
 
   .footer {
@@ -2277,19 +2395,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .hero__wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .hero__wrap .buttons {
-    width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-right: 0;
-  }
-
   .hero {
     padding-top: 20rem;
   }
@@ -2316,6 +2421,19 @@ body {
             order: 1;
     margin-bottom: 20px;
     max-width: 300px;
+  }
+
+  .hero__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .hero__wrap .buttons {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 0;
   }
 
   .hfeat {
@@ -2367,6 +2485,15 @@ body {
 
   .calc {
     padding-top: 3rem;
+  }
+
+  .profits-slider {
+    width: 380px;
+  }
+
+  .prev-slide,
+  .next-slide {
+    display: none;
   }
 
   .footer {
@@ -2465,6 +2592,58 @@ body {
   }
 
   .calc__button {
+    font-size: 12px;
+  }
+
+  .darkblue__text {
+    font-size: 16px;
+  }
+
+  .darkblue__button {
+    font-size: 14px;
+    padding: 12px 30px;
+  }
+
+  .profits {
+    background: url("../img/profits-phone.png") no-repeat bottom -30px center/390px, url("../img/profits-bg-lines.png") no-repeat bottom center/contain, #eaf1f7;
+  }
+
+  .profits-slider {
+    width: 280px;
+  }
+
+  .profits__heading {
+    margin-bottom: 100px;
+  }
+
+  .profits__slide-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .profits__slide-text {
+    font-size: 12px;
+    max-width: 110px;
+    line-height: 140%;
+  }
+
+  .profits__title {
+    max-width: 300px;
+  }
+
+  .vertical-form__title {
+    font-size: 18px;
+  }
+
+  .vertical-form__subtitle {
+    font-size: 12px;
+  }
+
+  .vertical-form__input {
+    font-size: 12px;
+  }
+
+  .vertical-form__button {
     font-size: 12px;
   }
 }

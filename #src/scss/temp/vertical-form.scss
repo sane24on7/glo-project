@@ -1,38 +1,67 @@
 .vertical-form {
-	padding: 128px 0 122px;
+	padding: 12.2rem 0 12.2rem;
 	background: url('../img/vertical-form-bg.png') no-repeat center / cover, radial-gradient(circle 1152px at center, #03256c 0%, #061826 100%);
 }
+
 .vertical-form__title {
 	text-align: center;
 	margin: auto;
 	font-size: 2.4rem;
-	line-height: 2.88rem;
+	line-height: 2.9rem;
 	color: #fff;
 	max-width: 41rem;
-	margin-bottom: 2.6rem;
+	margin-bottom: 2rem;
 }
+
 .vertical-form__subtitle {
 	text-align: center;
+	padding: 0 21px 0 0;
 	color: #fff;
 	margin: auto;
-	font-size: 1.5rem;
-	line-height: 2.4rem;
-	max-width: 41.6rem;
-	margin-bottom: 4.5rem;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 24px;
+	max-width: 44rem;
 }
+
+.vertical-form__subtitle--2 {
+	margin-bottom: 3.8rem;
+}
+
 .vertical-form__form {
 	display: flex;
 	flex-direction: column;
-	max-width: 35.9rem;
+	max-width: 36.2rem;
 	margin: auto;
 }
+
 .vertical-form__input {
-	padding: 1.7rem;
+	padding: 1.3rem 1.5rem 1.3rem;
 	font-size: 1.9rem;
-	margin-bottom: 2.4rem;
+	margin-bottom: 2.1rem;
 }
+
 .vertical-form__button {
 	font-size: 17px;
 	font-weight: 700;
-	padding: 1.8rem;
+	padding: 1.5rem;
+}
+
+@media screen and (max-width: 510px) {
+	.vertical-form__title {
+		font-size: 18px;
+	}
+
+	.vertical-form__subtitle {
+		font-size: 12px;
+	}
+
+	.vertical-form__input {
+		font-size: 12px;
+	}
+
+	.vertical-form__button {
+		font-size: 12px;
+	}
+
 }

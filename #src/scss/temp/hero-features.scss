@@ -25,6 +25,7 @@
 
 	&__feature {
 		margin-right: 1rem;
+
 		&:last-child {
 			padding-bottom: 2.3rem;
 			margin-right: -13px;
@@ -52,9 +53,115 @@
 	&__text--main {
 		max-width: 21.2rem;
 	}
-	
+
 	&__title--main {
 		font-weight: 700;
 		margin-top: -7px;
+	}
+}
+
+@media screen and (max-width: 1260px) {
+	.hfeat {
+		margin: auto;
+		margin-top: -26rem;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.hfeat {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.hfeat__feature--main {
+		margin-right: 0;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+
+	.hfeat__title--main {
+		max-width: none;
+	}
+
+	.hfeat__text--main {
+		max-width: none;
+	}
+
+	.hfeat__feature {
+		margin: 0 8% 0 auto;
+
+		&:last-child {
+			margin: 0 auto 0 0;
+		}
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.hfeat {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hfeat {
+		padding-bottom: 8rem;
+		justify-content: flex-end;
+	}
+
+	.hfeat__main-img {
+		font-size: 60px;
+		letter-spacing: 0;
+		margin-left: 0;
+	}
+
+	.hfeat__main--accent {
+		font-size: 36px;
+		margin-left: 8px;
+	}
+
+	.hfeat__img-wrap {
+		text-align: center;
+	}
+
+	.hfeat__title {
+		text-align: center;
+		line-height: 160%;
+		font-size: 16px;
+		margin: 0 0 15px 0;
+	}
+
+	.hfeat__text {
+		text-align: center;
+		max-width: 240px;
+		margin: 0 auto 0 auto;
+	}
+
+	.hfeat__feature--main {
+		margin: 0 auto 70px auto;
+	}
+
+	.hfeat__feature {
+		margin: 0 auto 0 auto;
+
+		&:last-child {
+			margin: 0 auto 0 auto;
+		}
+	}
+}
+@media screen and (max-width: 510px) {
+	.hfeat__img-wrap {
+		margin: auto;
+		max-width: 80px;
+		margin-bottom: 10px;
+
+		&--last {
+			max-width: 60px;
+		}
+
+		.hfeat__img {
+			object-fit: contain;
+		}
 	}
 }

@@ -1,33 +1,192 @@
 .profits {
-	padding: 12.3rem 0 13rem 0;
-	background: url('../img/profits-phone.png') no-repeat bottom center, $light-blue;
-
+	padding: 11.5rem 0 13rem 0;
+	background: url('../img/profits-phone.png') no-repeat bottom center, url('../img/profits-bg-lines.png') no-repeat bottom center, $light-blue;
 }
+
 .profits__title {
-	max-width: 46.2rem;
-	margin: auto;
+	max-width: 46.457rem;
+	line-height: 116.5%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.profits__heading {
 	margin-bottom: 29.6rem;
 }
-.swiper-container {
-	width: 315px;
-	height: 560px;
-}
+
 .profits__img-wrap {
-	margin-bottom: 5.2rem;
+	text-align: center;
+	margin: 0 0 4.5rem;
 }
+
 .profits__slide-title {
 	font-size: 2.4rem;
 	font-weight: 700;
+	text-align: center;
+	margin-bottom: 2.6rem;
 }
+
 .profits__slide-text {
 	font-size: 1.6rem;
-	font-weight: 400;
-	font-family: "MyriadPro";
-	max-width: 15.7rem;
+	line-height: 2.4rem;
+	font-weight: 300;
+	max-width: 17rem;
+	text-align: center;
+	margin: 0 auto;
 }
-.swiper-slide {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 
+.profits-slider {
+	overflow: hidden;
+	width: 721px;
+	height: 288px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.profits-wrapper {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.profits-slide {
+	flex-shrink: 0;
+	position: relative;
+}
+
+.prev-slide {
+	position: absolute;
+	left: 0;
+	top: 60.5%;
+	font-size: 1.6rem;
+	font-weight: 300;
+
+}
+
+.next-slide {
+	position: absolute;
+	right: 0;
+	top: 60.5%;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+.profits-button-prev,
+.profits-button-next {
+	position: absolute;
+	top: 57%;
+	margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+	z-index: 10;
+	cursor: pointer;
+	width: 52px;
+	height: 16px;
+}
+
+.profits-button-prev {
+	left: 0;
+	background: url('../img/profits-arrow-l.png') no-repeat left center;
+}
+
+.profits-button-next {
+	right: 0;
+	background: url('../img/profits-arrow-r.png') no-repeat right center;
+}
+
+.profits-button-prev::after,
+.profits-button-next::after {
+	display: none;
+}
+
+@media screen and (max-width: 1260px) {
+	.profits {
+		background: url('../img/profits-phone.png') no-repeat bottom -70px center, url('../img/profits-bg-lines.png') no-repeat bottom center, $light-blue;
+	}
+
+	.profits__title {
+		max-width: 380px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.profits {
+		padding-bottom: 6rem;
+		background: url('../img/profits-phone.png') no-repeat bottom -130px center, url('../img/profits-bg-lines.png') no-repeat bottom center, $light-blue;
+	}
+
+	.profits-slider {
+		width: 91%;
+		height: 290px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.profits {
+		padding: 6rem 0 4rem;
+		background: url('../img/profits-phone.png') no-repeat bottom -80px center / 500px, url('../img/profits-bg-lines.png') no-repeat bottom center, $light-blue;
+	}
+
+	.profits-slider {
+		width: 480px;
+		height: 190px;
+	}
+
+	.profits__img-wrap {
+		width: 80px;
+		margin: 0 auto 10px;
+	}
+
+	.profits__heading {
+		margin-bottom: 14rem;
+	}
+
+	.profits__slide-title {
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+
+	.profits__slide-text {
+		font-size: 14px;
+	}
+
+	.profits-button-prev,
+	.profits-button-next {
+		background-size: 40px auto;
+	}
+}
+@media screen and (max-width: 600px) {
+	.profits-slider {
+		width: 380px;
+	}
+
+	.prev-slide,
+	.next-slide {
+		display: none;
+	}
+}
+@media screen and (max-width: 510px) {
+	.profits {
+		background: url('../img/profits-phone.png') no-repeat bottom -30px center / 390px, url('../img/profits-bg-lines.png') no-repeat bottom center / contain, $light-blue;
+	}
+
+	.profits-slider {
+		width: 280px;
+	}
+
+	.profits__heading {
+		margin-bottom: 100px;
+	}
+
+	.profits__slide-title {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	.profits__slide-text {
+		font-size: 12px;
+		max-width: 110px;
+		line-height: 140%;
+	}
+	.profits__title {
+		max-width: 300px;
+	}
 }
