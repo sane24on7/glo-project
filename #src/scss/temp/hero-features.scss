@@ -164,4 +164,17 @@
 			object-fit: contain;
 		}
 	}
+	.hfeat__feature--main {
+		margin-bottom: 44px;
+		padding: 0;
+	}
+
+	.hfeat__feature {
+		padding: 0;
+		margin-bottom: 44px;
+		&:last-child {
+			padding: 0;
+		}
+	}
+
 }

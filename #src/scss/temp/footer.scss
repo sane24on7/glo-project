@@ -94,7 +94,7 @@
 	background: url('../img/footer-insta.svg') no-repeat center;
 }
 
-.footer__social-link--confirm {
+.footer__social-link--share {
 	background: url('../img/footer-arrow-up.svg') no-repeat center;
 }
 
@@ -167,10 +167,6 @@
 		margin: 10px;
 	}
 
-	.footer__social-link--confirm {
-		display: none;
-	}
-
 	.footer__row {
 		flex-direction: column;
 		align-items: center;
@@ -187,5 +183,7 @@
 	.footer__links::before {
 		display: none;
 	}
-
+	.copyright {
+		margin: 0 auto;
+	}
 }
